@@ -1,0 +1,767 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+}
+
+@font-face {
+    font-family: 'PT Serif Regular';
+    src: url(../fonts/PT_Serif/PT_Serif-Web-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'PT Serif Bold';
+    src: url(../fonts/PT_Serif/PT_Serif-Web-Bold.ttf)
+}
+
+@font-face {
+    font-family: 'Poppins Light';
+    src: url(../fonts/Poppins/Poppins-Light.ttf)
+}
+
+@font-face {
+    font-family: 'Poppins Regular';
+    src: url(../fonts/Poppins/Poppins-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url(../fonts/Poppins/Poppins-Bold.ttf)
+}
+
+body {
+    background-color: #fff;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: 'Poppins Bold';
+    font-size: 3.125rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Poppins Bold';
+    font-size: 1.875rem;
+    color: #000000;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'PT Serif Bold';
+    font-size: 1.875rem;
+    color: #ffffff;
+}
+
+p {
+    font-family: 'PT Serif Regular';
+    font-size: 1rem;
+    color: #aeaeae;
+    line-height: 1.875rem;
+}
+
+span.number-section {
+    font-family: 'PT Serif Bold';
+    color: #333333;
+    opacity: 0.15;
+    font-size: 4rem;
+}
+
+span.text-green {
+    color: #66a900;
+}
+
+
+/* NAV */
+
+.main-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 999;
+}
+.main-menu a.nav-link {
+    color: #ffffff !important;
+    font-size: 0.875rem;
+}
+
+.bg-success{
+    background-color:#66a900!important
+}
+
+/* HEADER */
+
+.header {
+    height: 100vh;
+    background-image: url(../images/bg-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header .content p {
+    color: #ffffff;
+}
+
+/* SECTION 1 - YOGA */
+
+.top-shape {
+    background-image: url(../images/top-shape.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80px;
+    padding: 0;
+}
+
+.yoga .content p {
+    margin-top: 1.8em;
+}
+
+.image-section1 {
+    text-align: right;
+    padding: 0;
+}
+
+
+/* SECTION 2 - PRACTICE */
+
+.practice .content{
+    overflow-x: hidden;
+}
+.practice .content p {
+    margin-top: 1.8em;
+}
+
+.image-section2 {
+    text-align: left;
+    padding: 0;
+}
+
+span.circle-point {
+    display: block;
+    float: left;
+    margin: auto;
+    margin-right: 1em;
+    background-color: #66a900;
+    color: #ffffff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    border: 2px solid #66a900;
+    box-shadow: inset 0 0 0 3px white;
+}
+
+p.bold {
+    font-weight: 600;
+}
+
+
+/* SECTION REGISTRATION */
+
+.registration {
+    height: auto;
+    padding-bottom: 2em;
+    background-image: url(../images/CTA-shape.jpg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.registration .content-text {
+    margin-top: 7em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.registration p {
+    font-family: 'Poppins Light';
+    color: #ffffff;
+    font-size: 0.875rem;
+    margin-bottom: 0;
+}
+
+.registration .content img {
+    position: absolute;
+    display: block;
+    float: left;
+    width: 30%;
+    margin-right: 1em;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.registration a.btn-registration {
+    background-color: #fff;
+    border-radius: 2px;
+    border: none;
+    padding: 1em 0;
+    float: right;
+    width: 65%;
+    text-decoration: none;
+    font-family: 'PT Serif Bold';
+    font-size: 1rem;
+    color: #66a900;
+    text-align: center;
+}
+
+/* SECTION CHOOSE US */
+
+.choose {
+    margin-top: 2em;
+}
+
+.choose .content p {
+    margin-top: 1.8em;
+}
+
+.choose .boxes .box {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.choose .boxes .box img {
+    margin-right: 0.4em;
+}
+
+.choose .boxes .box h4 {
+    font-size: "Poppins Bold";
+    font-size: 1.125rem;
+}
+
+.choose .boxes .box p {
+    font-size: 0.875rem;
+    line-height: 24px;
+    padding-left: 2em
+}
+
+
+/* SECTION COMMENTS */
+
+.comments {
+    margin-top: 2em;
+    overflow-x: hidden;
+}
+
+.comment {
+    display: none;
+}
+
+.comment.active {
+    display: block;
+}
+
+.comments .commentators {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 40vh;
+}
+
+.comments .commentators .commentator-woman {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    opacity: 0.1;
+}
+
+.comments .commentators .commentator-2nd-man {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    opacity: 0.1;
+}
+
+.comments .commentators .commentator-3th-man {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    opacity: 0.1;
+}
+
+.comments .commentators .commentator.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.arrows {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 300px;
+
+}
+
+.arrows .arrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #333333;
+    border: 2px solid #333333;
+    box-shadow: inset 0px 0px 0px 2px;
+    color: #ffffff;
+    border-radius: 50%;
+    z-index: 2;
+    text-align: center;
+
+}
+
+.arrows .arrow:hover {
+    background-color: #66a900;
+    border: 2px solid #66a900;
+    box-shadow: inset 0px 0px 0px 2px;
+    cursor: pointer;
+}
+
+.arrows .arrow.left {
+    top: 55%;
+    left: 25%;
+    transform: translate(-50%, -50%)
+}
+
+.arrows .arrow.right {
+    top: 55%;
+    left: 70%;
+    transform: translate(-50%, -50%)
+}
+
+.comments .content p.quote {
+    margin-top: 3em;
+}
+
+.comments .content img {
+    margin-top: -10px;
+    margin-left: -3em;
+    margin-right: 0.8em;
+}
+
+.comments .content p {
+    font-style: italic;
+    font-size: 0.875rem;
+    line-height: 28px;
+    margin-left: 2em;
+}
+
+.comments .content p.author {
+    font-family: 'Poppins Bold';
+    font-size: 1rem;
+    color: #000000;
+    font-style: normal;
+    margin-bottom: 0;
+}
+
+.comments .content p.author-info {
+    color: #a2a2a2;
+    font-size: 0.875rem;
+    font-style: normal;
+}
+
+
+/* SECTION PRICING */
+
+.pricing {
+    margin-top: 2em;
+}
+
+.pricing .content p {
+    margin-top: 1.8em;
+}
+
+.pricing-boxes {
+    margin-top: 2em;
+    /* overflow-x: hidden; */
+}
+
+.pricing-boxes .box {
+    display: block;
+    box-shadow: 0px 0px 10px;
+    width: 100%;
+    padding: 2em 0;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    background-color: #fff;
+}
+
+.pricing-boxes .box h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+}
+
+.pricing-boxes .box p {
+    font-size: 0.875rem;
+    line-height: 28px;
+    margin-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.box p:nth-of-type(1){
+    margin-top: 0;
+}
+
+
+.pricing-boxes .box .packet {
+    padding: 0.4em;
+    text-transform: uppercase;
+    font-family: 'Poppins Regular';
+    font-size: 0.875rem;
+    color: #aaaaaa;
+    background-color: #f6f6f6;
+    border-left: 3px solid #66a900;
+    border-right: 3px solid #66a900;
+}
+
+.pricing-boxes .box:hover .packet {
+    background-color: #66a900;
+    color: #ffffff;
+}
+
+.pricing-boxes .box a {
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 0.875rem;
+}
+
+.pricing-boxes .box a:hover {
+    color: #66a900;
+    border-bottom: 2px solid #66a900;
+}
+
+.shape-pricing {
+    background-image: url(../images/bg-pricing.jpg);
+    background-size: 180% 35%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 2em;
+}
+
+.price-registration .content-text {
+    margin-top: 7em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.price-registration p {
+    font-family: 'Poppins Light';
+    color: #ffffff;
+    font-size: 0.875rem;
+    margin-bottom: 0;
+}
+
+.price-registration .content img {
+    position: absolute;
+    display: block;
+    float: left;
+    width: 30%;
+    margin-right: 1em;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.price-registration a.btn-registration {
+    background-color: #fff;
+    border-radius: 2px;
+    border: none;
+    padding: 1em 0;
+    float: right;
+    width: 65%;
+    text-decoration: none;
+    font-family: 'PT Serif Bold';
+    font-size: 1rem;
+    color: #66a900;
+    text-align: center;
+}
+
+/* SECTION FOOTER */
+
+.footer {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.footer h5 {
+    font-family: 'PT Serif Regular';
+    font-size: 0.875rem;
+    margin-top: 1em;
+    color: #9e9e9e;
+}
+
+.footer a {
+    font-family: 'PT Serif Regular';
+    font-size: 0.875rem;
+    color: #9e9e9e;
+    text-decoration: none;
+    margin: 0.5em;
+}
+
+.footer a:hover {
+    border-bottom: 1px solid #9e9e9e;
+}
+
+@media (min-width:576px) {
+
+    .registration .content-text {
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .registration .content {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        text-align: left;
+    }
+
+    .registration .content img {
+        width: 25%;
+        margin-right: 0em;
+        left: 2em;
+        transform: none;
+    }
+
+    .registration a.btn-registration {
+        margin-top: auto;
+        margin-bottom: 1em;
+        padding: 1em 2em;
+        float: right;
+        width: 60%;
+    }
+
+    .pricing-boxes .col-sm-4 {
+        padding: 0;
+    }
+
+    .pricing-boxes .col-sm-4.box1 {
+        padding-right: 7px;
+        padding-left: 7px;
+    }
+
+    .pricing-boxes .col-sm-4.box2 {
+        padding-right: 7px;
+        padding-left: 7px;
+    }
+
+    .pricing-boxes .col-sm-4.box3 {
+        padding-right: 7px;
+        padding-left: 7px;
+    }
+
+    .pricing-boxes .box {
+        box-shadow: 0px 0px 10px;
+        width: 100%;
+        height: 90%;
+        padding: 2em 0em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .price-registration {
+        margin-top: 3em;
+    }
+
+    .price-registration .content-text {
+        margin-top: auto;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .price-registration .content {
+        margin-top: auto;
+        margin-bottom: 0em;
+        text-align: left;
+    }
+
+    .price-registration .content img {
+        width: 25%;
+        margin-right: 0em;
+        left: 2em;
+        margin: auto;
+        bottom: 0;
+        transform: none;
+    }
+
+    .price-registration a.btn-registration {
+        margin-top: auto;
+        margin-bottom: 1em;
+        padding: 1em 2em;
+        float: right;
+        width: 60%;
+        text-align: center;
+    }
+
+    .footer {
+        margin-top: 6em;
+        margin-bottom: 2em;
+        text-align: center;
+    }
+
+
+    .footer h5 {
+        margin-bottom: 1em;
+        text-align: center;
+
+    }
+
+}
+
+@media (min-width:768px) {
+    .main-menu {
+        background-color: transparent !important;
+        margin-top: 20px;
+        position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+    }
+
+    .header .content {
+        padding: 3em;
+    }
+
+    .top-shape {
+        background-size: 100% 100%;
+    }
+
+    .yoga .content {
+        padding: 3em;
+    }
+
+    .practice .content {
+        padding: 3em;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+    .registration {
+        height: 30vh;
+        background-size: cover;
+    }
+
+    .registration .content {
+        margin-top: auto;
+        margin-bottom: 0em;
+        text-align: left;
+    }
+
+    .registration .content img {
+        width: 25%;
+        margin-right: 0em;
+        left: 2em;
+        margin: auto;
+        bottom: 0;
+        transform: none;
+    }
+
+    .registration a.btn-registration {
+        margin-top: auto;
+        margin-bottom: 1em;
+        padding: 1em 2em;
+        float: right;
+        width: 60%;
+        text-align: center;
+    }
+
+    .choose .boxes .box {
+        text-align: left;
+    }
+    .pricing-boxes .col-sm-4.box1 {
+        padding-right: 15px;
+        padding-left: 0;
+    }
+
+    .pricing-boxes .col-sm-4.box2 {
+        padding-right: 7px;
+        padding-left: 7px;
+    }
+
+    .pricing-boxes .col-sm-4.box3 {
+        padding-left: 15px;
+        padding-right: 0;
+    }
+    .shape-pricing {
+        background-image: url(../images/bg-pricing.jpg);
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    .pricing-boxes {
+        position: relative;
+    }
+
+    .pricing-boxes::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        bottom: 0;
+        height: 70px;
+        background-image: url(../images/pricing-shape.png);
+        background-repeat: no-repeat;
+        background-size: 110% 100%;
+        background-position: bottom;
+        opacity: 0.9;
+    }
+
+    .pricing-boxes .box {
+        height: 450px;
+        margin-bottom: 0;
+    }
+    .pricing-boxes .box a{
+        z-index: 9999;
+    }
+
+    .footer {
+        margin-top: 6em;
+        margin-bottom: 2em;
+        text-align: left;
+    }
+
+    .footer img {
+        float: left;
+        margin-right: 1em;
+    }
+
+    .footer h5 {
+        float: left
+    }
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (orientation: landscape) {
+    .header .content{
+        padding: 0;
+        
+    }
+.header .content h1{
+    text-align: center;
+    margin-top: 1em;
+    font-size: 2rem;
+}
+.header .content p{
+    text-align: center;
+    font-size: 1rem;
+}
+}
